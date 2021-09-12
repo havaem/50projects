@@ -1,0 +1,28 @@
+body {
+	height: 100vh;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	background: #765bed;
+}
+.search {
+	display: flex;
+	input {
+		width: 0;
+		border: none;
+		outline: none;
+		background: white;
+		transition: width 0.3s;
+		&.active {
+			width: 15rem;
+			padding: 1rem 0 1rem 1rem;
+		}
+	}
+	button {
+		border: none;
+		outline: none;
+		padding: 1rem;
+		background: white;
+		cursor: pointer;
+	}
+}
